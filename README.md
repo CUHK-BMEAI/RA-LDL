@@ -23,9 +23,6 @@ RA-LDL presents a minimalist yet effective pipeline for class-incremental learni
 # Clone the repository
 git clone https://github.com/CUHK-BMEAI/RA-LDL.git
 cd RA-LDL
-
-# Install dependencies (coming soon)
-# pip install -r requirements.txt
 ```
 
 ## Requirements
