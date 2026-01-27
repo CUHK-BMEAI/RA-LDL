@@ -1,0 +1,3 @@
+dataset,shuffle,init_cls,increment,model_name,convnet_type,device,seed,batch_size,tuned_epoch,body_lr,head_lr,weight_decay,min_lr,use_RP,M,use_input_norm
+covid,True,2,2,adapter,pretrained_vit_b16_224_adapter,2,1993,48,5,0.01,0.01,0.0005,0.0,True,3840,False
+
