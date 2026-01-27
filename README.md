@@ -30,42 +30,21 @@ cd RA-LDL
 
 ## Requirements
 
-Coming soon. Expected dependencies include:
-- Python >= 3.8
-- PyTorch >= 1.10
-- torchvision
-- numpy
-- Additional medical imaging libraries
-
-## Usage
-
-### Quick Start
-
-```python
-# Coming soon - example code will be provided
-```
+- Python >= 3.8  
+- PyTorch >= 1.4 
+- tqdm == 4.65.0
+- timm == 0.6.5
 
 ### Training
 
 ```bash
-# Training script example - coming soon
-# python train.py --config configs/default.yaml
-```
-
-### Evaluation
-
-```bash
-# Evaluation script example - coming soon
-# python eval.py --checkpoint path/to/checkpoint.pth
+$ python main.py -d skin8
+- for -d choose from 'medmnist', 'skin8', 'blood', 'covid'
 ```
 
 ## Dataset
 
-Information about supported medical image datasets will be provided soon.
-
-## Results
-
-Performance benchmarks and comparison with state-of-the-art methods will be available upon publication.
+We follow [ACL](https://github.com/GiantJun/CL_Pytorch/tree/main) to use the same data index_list for training.
 
 ## Citation
 
