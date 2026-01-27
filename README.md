@@ -41,7 +41,7 @@ $ python main.py -d skin8
 
 ## Dataset
 
-We follow [ACL](https://github.com/GiantJun/CL_Pytorch/tree/main) to use the same data index_list for training.
+We follow [ACL](https://github.com/GiantJun/CL_Pytorch/tree/main) to use the same data index_list for training. Please modify `utils/data.py` to point to your local data path.
 
 ## Citation
 
