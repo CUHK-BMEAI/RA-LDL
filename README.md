@@ -30,11 +30,11 @@ cd RA-LDL
 - tqdm == 4.65.0
 - timm == 0.6.5
 
-### Training
+## Training
 
 ```bash
 $ python main.py -d skin8
-- for -d choose from 'medmnist', 'skin8', 'blood', 'covid'
+- for -d choose from 'medmnist', [skin8](https://www.kaggle.com/datasets/salviohexia/isic-2019-skin-lesion-images-for-classification), 'blood', 'covid'
 ```
 
 ## Dataset
