@@ -34,12 +34,12 @@ cd RA-LDL
 
 ```bash
 $ python main.py -d skin8
-- for -d choose from 'medmnist', [skin8](https://www.kaggle.com/datasets/salviohexia/isic-2019-skin-lesion-images-for-classification), 'blood', 'covid'
+- for -d choose from 'medmnist', 'skin8', 'blood', 'covid'
 ```
 
 ## Dataset
 
-We follow [ACL](https://github.com/GiantJun/CL_Pytorch/tree/main) to use the same data index_list for training. Please modify `utils/data.py` to point to your local data path.
+We follow [ACL](https://github.com/GiantJun/CL_Pytorch/tree/main) to use the same data index_list for training. Please modify `utils/data.py` to point to your local data path. To download datasets, links: [skin8](https://www.kaggle.com/datasets/salviohexia/isic-2019-skin-lesion-images-for-classification), 
 
 ## Citation
 
