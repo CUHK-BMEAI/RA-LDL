@@ -7,15 +7,13 @@ Official implementation of **"Random Anchors with Low-rank Decorrelated Learning
 
 ## Overview
 
-RA-LDL presents a minimalist yet effective pipeline for class-incremental learning in medical image classification. The method leverages random anchors combined with low-rank decorrelated learning to address the challenge of catastrophic forgetting while maintaining computational efficiency.
+Class-incremental learning (CIL) in medical image-guided diagnosis requires models to preserve knowledge of historical disease classes while adapting to emerging categories. Pre-trained models (PTMs) with well-generalized features provide a strong foundation, yet most PTM-based CIL strategies, such as prompt tuning, task-specific adapters and model mixtures, rely on increasingly complex designs. While effective in general-domain benchmarks, these methods falter in medical imaging, where low intra-class variability and high inter-domain shifts (from scanners, protocols and institutions) make CIL particularly prone to representation collapse and domain misalignment. Under such conditions, we find that lightweight representation calibration strategies, often dismissed in general-domain CIL for their modest gains, can be remarkably effective for adapting PTMs in medical settings. To this end, we introduce Random Anchors with Low-rank Decorrelated Learning (RA-LDL), a minimalist representation-based framework that combines (a) PTM-based feature extraction with optional ViT-Adapter tuning, (b) feature calibration via frozen Random Anchor projection and a single-session-trained Low-Rank Projection (LRP), and (c) analytical closed-form decorrelated learning. The entire pipeline requires only one training session and minimal task-specific tuning, making it appealing for efficient deployment. Despite its simplicity, RA-LDL achieves consistent and substantial improvements across both general-domain and medical-specific PTMs, and outperforms recent state-of-the-art methods on four diverse medical imaging datasets. These results highlight that minimalist representation recalibration, rather than complex architectural modifications, can unlock the underexplored potential of PTMs in medical CIL. We hope this work establishes a practical and extensible foundation for future research in class-incremental image-guided diagnosis.
 
 ### Key Features
 
-- 🎯 **Random Anchors**: Novel anchoring mechanism for stable incremental learning
-- 🔧 **Low-rank Decorrelated Learning**: Efficient feature representation with reduced redundancy
+- 🔄 **Class-Incremental Learning**: Supports continuous learning of new classes without forgetting
 - 🏥 **Medical Image Focus**: Specifically designed for medical image classification tasks
 - ⚡ **Minimalist Pipeline**: Simple yet effective approach with minimal overhead
-- 🔄 **Class-Incremental Learning**: Supports continuous learning of new classes without forgetting
 
 ## Installation
 
@@ -50,7 +48,7 @@ If you find this work useful for your research, please consider citing:
 ```bibtex
 @inproceedings{raldl2026,
   title={Random Anchors with Low-rank Decorrelated Learning: A Minimalist Pipeline for Class-Incremental Medical Image Classification},
-  author={To be updated},
+  author={Xinyao Wu*, Zhe Xu*, Raymond Kai-yu Tong},
   booktitle={International Conference on Learning Representations (ICLR)},
   year={2026}
 }
@@ -59,20 +57,3 @@ If you find this work useful for your research, please consider citing:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For questions and discussions, please contact:
-- CUHK Biomedical AI Lab: [https://github.com/CUHK-BMEAI](https://github.com/CUHK-BMEAI)
-
-## Acknowledgments
-
-This work is conducted at the Chinese University of Hong Kong (CUHK) Biomedical AI Lab.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
----
-
-**Note**: This repository is under active development. Code and documentation will be updated regularly as we prepare for the official release.
