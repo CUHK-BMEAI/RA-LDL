@@ -39,7 +39,8 @@ $ python main.py -d skin8
 
 ## Dataset
 
-We follow [ACL](https://github.com/GiantJun/CL_Pytorch/tree/main) to use the same data index_list for training. Please modify `utils/data.py` to point to your local data path. To download datasets, links: [skin8](https://www.kaggle.com/datasets/salviohexia/isic-2019-skin-lesion-images-for-classification), 
+We follow [ACL](https://github.com/GiantJun/CL_Pytorch/tree/main) to use the same data index_list for training. Please modify `utils/data.py` to point to your local data path. 
+To download datasets, links: [medmnist](https://medmnist.com/), [skin8](https://www.kaggle.com/datasets/salviohexia/isic-2019-skin-lesion-images-for-classification), [blood](https://www.kaggle.com/datasets/kylewang1999/pbc-dataset), [covid](https://www.kaggle.com/datasets/mustai/continual-learning-of-covid19/data). 
 
 ## Citation
 
