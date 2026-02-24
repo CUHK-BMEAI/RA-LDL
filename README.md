@@ -49,7 +49,7 @@ If you find this work useful for your research, please consider citing:
 ```bibtex
 @inproceedings{raldl2026,
   title={Random Anchors with Low-rank Decorrelated Learning: A Minimalist Pipeline for Class-Incremental Medical Image Classification},
-  author={Xinyao Wu*, Zhe Xu*, Raymond Kai-yu Tong},
+  author={Wu*, Xinyao and Xu*, Zhe, and Tong, Raymond Kai-yu},
   booktitle={International Conference on Learning Representations (ICLR)},
   year={2026}
 }
